@@ -1,7 +1,8 @@
 import React from 'react';
+import Form from "./Form";
 
 const ContainerForm =(props) => {
-        return (
+        return (<div>
             <form onSubmit={props.gettingJson}>
                 <div>
                     Показать список Книг
@@ -10,6 +11,7 @@ const ContainerForm =(props) => {
                     Нажми
                 </button>
             </form>
+            </div>
         )
 }
 

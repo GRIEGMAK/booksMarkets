@@ -3,17 +3,12 @@ import { connect } from 'react-redux'
 import { setBooks } from "../actions/books";
 import axios from 'axios';
 import ContainerForm from "./ContainerForm";
+import Form from "./Form";
+import MainPart from "./MainPart";
 
 
 class App extends React.Component {
-    state = {
-        id: undefined,
-        author: undefined,
-        title: undefined,
-        image: undefined,
-        price: undefined,
-        rating: undefined,
-    };
+
     componentDidMount() {
         axios.get(`/books.json`).then(({data}) => {
             this.setState(data);
@@ -51,7 +46,13 @@ class App extends React.Component {
                         ))
                     }
                 </ul>
-                <ContainerForm />
+                <ContainerForm gettingJson={this.gettingJson}/>
+                <MainPart   id={this.state.id}
+                            title={this.state.title}
+                            author={this.state.author}
+                            image={this.state.image}
+                            price={this.state.price}
+                            rating={this.state.rating}/>
             </div>
         )
     }
