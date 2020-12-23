@@ -2,14 +2,14 @@ import React from 'react';
 
 const Form =(props) => {
     return (
-        <form onSubmit={props.gettingJson}>
-            <div>
-                Показать список Книг
-            </div>
-            <button>
-                Нажми
-            </button>
-        </form>
+        <div>
+            <div>id={props.id}</div>
+            <img src={props.image}/>
+            <div>title={props.title}</div>
+            <div>author={props.author}</div>
+            <div>price={props.price} p</div>
+            <div>rating={props.rating}</div>
+        </div>
     )
 }
 

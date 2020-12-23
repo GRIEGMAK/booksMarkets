@@ -1,13 +1,15 @@
 import React from 'react';
+import Form from "./Form";
 
 const MainPart =(props) => {
     return (
         <div>
-            <div>id={props.id}</div>
-            <div>title={props.title}</div>
-            <div>author={props.author}</div>
-    <div>price={props.price} p</div>
-    <div>rating={props.rating}</div>
+            <Form image={props.image}
+                  id={props.id}
+                  title={props.title}
+                  author={props.author}
+                  price={props.price}
+                  rating={props.rating}/>
         </div>
     )
 }
