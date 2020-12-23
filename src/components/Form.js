@@ -9,6 +9,7 @@ const Form =(props) => {
             <div>author={props.author}</div>
             <div>price={props.price} p</div>
             <div>rating={props.rating}</div>
+            <hr />
         </div>
     )
 }

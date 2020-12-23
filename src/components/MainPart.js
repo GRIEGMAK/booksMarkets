@@ -2,14 +2,20 @@ import React from 'react';
 import Form from "./Form";
 
 const MainPart =(props) => {
+    let formElements = undefined;
+    if(props.state.dataU){
+        formElements = props.state.dataU.map(b => <Form id={b.id}
+                                                            title={b.title}
+                                                            author={b.author}
+                                                            image={b.image}
+                                                            price={b.price}
+                                                            rating={b.rating}/>
+        )
+    }
+    console.log(props.state)
     return (
         <div>
-            <Form image={props.image}
-                  id={props.id}
-                  title={props.title}
-                  author={props.author}
-                  price={props.price}
-                  rating={props.rating}/>
+            {formElements}
         </div>
     )
 }

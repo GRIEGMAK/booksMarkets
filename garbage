@@ -1,0 +1,7 @@
+    let formElements = props.state.dataU.map(b => <Form id={b.id}
+                                                        title={b.title}
+                                                        author={b.author}
+                                                        image={b.image}
+                                                        price={b.price}
+                                                        rating={b.rating}/>
+    )
