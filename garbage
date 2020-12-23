@@ -1,7 +1,8 @@
-    let formElements = props.state.dataU.map(b => <Form id={b.id}
-                                                        title={b.title}
-                                                        author={b.author}
-                                                        image={b.image}
-                                                        price={b.price}
-                                                        rating={b.rating}/>
-    )
+    gettingJson = async(e) => {
+        e.preventDefault();
+        let api_url = await fetch(`/books.json`);
+        const dataU = await api_url.json();
+        this.setState({
+            dataU
+        })
+    };

@@ -4,7 +4,7 @@ const Form =(props) => {
     return (
         <div>
             <div>id={props.id}</div>
-            <img src={props.image}/>
+            <img src={props.image} />
             <div>title={props.title}</div>
             <div>author={props.author}</div>
             <div>price={props.price} p</div>
