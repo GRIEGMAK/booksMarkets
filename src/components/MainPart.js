@@ -11,6 +11,7 @@ const MainPart =(props) => {
                                                              image={b.image}
                                                              price={b.price}
                                                              rating={b.rating}
+                                                             description={b.description}
             />
         )
     }
