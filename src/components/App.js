@@ -14,18 +14,18 @@ class App extends React.Component {
         this.setState({
             dataU
         })
-
     };
     render() {
-        let timerId = setTimeout(this.gettingJson, 100);
-        let dataU = this.state.dataU
-        if(dataU){
-            clearInterval(timerId)
+        const request = (callback)=>{
+            return callback();
         }
+        request(this.gettingJson)
+        let error = undefined;
+        if(this.state.dataU === undefined){error="404"}
         return (
             <div>
                 <ContainerForm />
-                <MainPart state={this.state}/>
+                <MainPart state={this.state} error={error}/>
             </div>
         )
     }

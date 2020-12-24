@@ -1,14 +1,14 @@
 import React from 'react';
+import ImageCard from "./ImageCard";
 
 const Form =(props) => {
     return (
         <div>
-            <div>id={props.id}</div>
-            <img src={props.image} />
-            <div>title={props.title}</div>
-            <div>author={props.author}</div>
-            <div>price={props.price} p</div>
-            <div>rating={props.rating}</div>
+            <div>{props.id}<h4>{props.title}</h4></div>
+            <div><small><i>— {props.author}</i></small></div>
+            <ImageCard image={props.image}/>
+            <div>Цена: {props.price}р</div>
+            <div>Оценка: {props.rating}</div>
             <hr />
         </div>
     )

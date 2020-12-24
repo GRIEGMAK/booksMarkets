@@ -1,8 +1,0 @@
-    gettingJson = async(e) => {
-        e.preventDefault();
-        let api_url = await fetch(`/books.json`);
-        const dataU = await api_url.json();
-        this.setState({
-            dataU
-        })
-    };
