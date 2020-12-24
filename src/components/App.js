@@ -1,5 +1,5 @@
 import React from 'react';
-import ContainerForm from "./ContainerForm";
+import Header from "./Header";
 import MainPart from "./MainPart";
 
 
@@ -24,7 +24,7 @@ class App extends React.Component {
         if(this.state.dataU === undefined){error="404"}
         return (
             <div>
-                <ContainerForm />
+                <Header />
                 <MainPart state={this.state} error={error}/>
             </div>
         )

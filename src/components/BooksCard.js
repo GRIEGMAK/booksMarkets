@@ -1,7 +1,7 @@
 import React from 'react';
 import ImageCard from "./ImageCard";
 
-const Form =(props) => {
+const BooksCard =(props) => {
     return (
         <div>
             <div>{props.id}<h4>{props.title}</h4></div>
@@ -14,4 +14,4 @@ const Form =(props) => {
     )
 }
 
-export default Form;
+export default BooksCard;
