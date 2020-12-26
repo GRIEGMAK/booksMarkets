@@ -1,4 +1,23 @@
 .linkCard {
-    width: 300px;
-    height: auto;
+    width: 200px;
+    height: 325px;
+    border-radius: 10%;
+    background-color: coral;
+    padding-bottom: 5px;
+    padding-top: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.titleBooks {
+    height: 100px;
+    padding-top: 10px;
+    text-align: center;
+    vertical-align: center;
+}
+
+.descBooks {
+    text-align: center;
 }

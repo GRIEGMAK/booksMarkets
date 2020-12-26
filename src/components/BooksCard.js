@@ -3,18 +3,18 @@ import ImageCard from "./ImageCard";
 import s from "./../styles/BooksCard.module.css"
 
 const BooksCard =(props) => {
-    let link = '/' + props.id;
     return (
-        <div className={s.linkCard}>
-            <a href={link}>
-            <div><h4>{props.id}. {props.title}</h4></div>
-            <div><small><i>— {props.author}</i></small></div>
-            <ImageCard image={props.image}/>
-            <div>Цена: {props.price}р</div>
-            <div>Оценка: {props.rating}</div>
-            <hr />
-            </a>
-        </div>
+            <div className={s.linkCard}>
+                <div className={s.titleBooks}>
+                <i>{props.title}</i>
+                </div>
+                <div className={s.descBooks}>
+                    <small><i>— {props.author}</i></small>
+                    <ImageCard image={props.image}/>
+                    <div>Цена: {props.price}р</div>
+                    <div>Оценка: {props.rating}</div>
+                </div>
+            </div>
     )
 }
 
