@@ -1,6 +1,5 @@
 import React from 'react';
 import BooksCard from './BooksCard';
-import s from './../styles/ContainerBooksCard.module.css'
 
 const ContainerBooksCard =(props) => {
     return (

@@ -3,8 +3,8 @@ import ContainerBooksDescription from "./ContainerBooksDescription";
 
 const Description =(props) => {
     let containerBooksDescElements = undefined;
-    if(props.state.dataU){
-        containerBooksDescElements = props.state.dataU.map(b => <ContainerBooksDescription key={b.id}
+    if(props.books){
+        containerBooksDescElements = props.books.map(b => <ContainerBooksDescription key={b.id}
                                                                                 id={b.id + 1}
                                                                                 title={b.title}
                                                                                 author={b.author}
@@ -14,7 +14,6 @@ const Description =(props) => {
                                                                                 description={b.description}/>
         )
     }
-    let idKey = 2;
     return (
         <div>
             {containerBooksDescElements}
