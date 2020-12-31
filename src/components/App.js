@@ -10,14 +10,14 @@ const App = (props) => {
             setBooks(await api_url.json());
         }
     useEffect(fetchBooks);
-    const { books, isReady } = props;
+    const { books, isReady, setSort } = props;
     let error = undefined;
     if(!books){
         error = "404";
     }
         return (
             <div className={s.Main}>
-                <Header/>
+                <Header setSort={setSort}/>
                 {!isReady
                     ?'Загрузка...'
                     : <MainPart books={books} error={error}/>}
