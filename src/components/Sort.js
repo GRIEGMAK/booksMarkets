@@ -1,7 +1,4 @@
-import React, {useState} from 'react';
-import {bindActionCreators} from "redux";
-import * as sortActions from './../actions/sort'
-import {connect} from "react-redux";
+import React from 'react';
 import {setSort} from "./../actions/sort";
 
 const Sort =(props) => {
@@ -17,11 +14,4 @@ const Sort =(props) => {
     )
 }
 
-const mapStateToProps = ({ books }) => ({
-    sortR: books.sortR,
-})
-const mapDispatchToProps = dispatch => ({
-        ...bindActionCreators(sortActions, dispatch)
-})
-
-export default connect(mapStateToProps, mapDispatchToProps)(Sort);
+export default Sort;

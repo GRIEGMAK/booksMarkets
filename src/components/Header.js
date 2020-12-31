@@ -1,6 +1,6 @@
 import React from 'react';
 import s from './../styles/Header.module.css'
-import Sort from "./Sort";
+import Sort from "./../containers/Sort";
 
 const Header =(props) => {
     const { setSort } = props

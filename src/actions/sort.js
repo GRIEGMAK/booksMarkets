@@ -1,6 +1,6 @@
-export const setSort = sortR => ({
+export const setSort = filterBy => ({
     type: 'SET_SORT',
-    payload: sortR,
+    payload: filterBy,
 });
 
 export const setSearchQuery = value => ({

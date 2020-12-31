@@ -3,7 +3,7 @@ const SET_QUERY = "SET_QUERY";
 
 const initialState = {
     searchQuery: '',
-    sortR: 'all',
+    filterBy: 'all',
 };
 
 export default (state = initialState, action) => {
@@ -16,7 +16,7 @@ export default (state = initialState, action) => {
         case SET_SORT:
             return {
                 ...state,
-                sortR: action.payload,
+                filterBy: action.payload,
             };
         default:
             return state;
