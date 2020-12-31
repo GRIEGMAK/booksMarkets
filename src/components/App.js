@@ -18,7 +18,7 @@ const App = (props) => {
     }
         return (
             <div className={s.Main}>
-                <Header setSort={setSort}/>
+                <Header/>
                 {!isReady
                     ?'Загрузка...'
                     : <MainPart books={books} error={error}/>}

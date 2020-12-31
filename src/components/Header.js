@@ -7,7 +7,7 @@ const Header =(props) => {
         return (<div>
                 <h2>BooksMarket</h2>
                 <div className={s.freePlace}>
-                    <Sort setSort={setSort}/><button>Cart (Корзина)</button>
+                    <Sort/><button>Cart (Корзина)</button>
                 </div>
             </div>
         )

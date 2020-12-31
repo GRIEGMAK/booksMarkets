@@ -2,6 +2,7 @@ import React from 'react';
 import {setSort} from "./../actions/sort";
 
 const Sort =(props) => {
+    const { setSort } = props
     return (
         <div>
             <button onClick={() => setSort('all')}>Все</button>
