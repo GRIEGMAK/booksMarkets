@@ -1,5 +1,5 @@
 .imageItem {
     width: 100px;
     height:150px;
-    background: url("./../image/logo.jpg") center center no-repeat;
+    background: url("./../images/logo.jpg") center center no-repeat;
 }
